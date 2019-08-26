@@ -4,5 +4,4 @@ ADD . /app/
 WORKDIR /app 
 RUN go build -o main . 
 CMD ["/app/main"]
-[Install]
-WantedBy=default.target
+CMD WantedBy=default.target
